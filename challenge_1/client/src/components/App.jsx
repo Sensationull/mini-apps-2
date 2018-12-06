@@ -27,9 +27,7 @@ class App extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    fetch(`/events?q=${this.state.query}&_limit=10`, {
-      method: 'GET'
-    })
+    fetch(`/events?q=${this.state.query}&_limit=10`)
       .then(response => response.json())
       .then((data) => {
         this.setState({
@@ -42,12 +40,10 @@ class App extends React.Component {
         });
       })
       .catch(() => console.log(error));
-    console.log(this.state.list);
   }
   
   handlePageClick(data) {
     let selected = data.selected;
-
     fetch(`/events/?_page=${selected}&_limit=10`)
       .then(response => response.json())
       .then((data) => {
