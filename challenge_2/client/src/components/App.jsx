@@ -19,7 +19,7 @@ class App extends React.Component {
       .then((data) => {
         var date = Object.keys(data.bpi);
         var closingP = Object.values(data.bpi);
-        
+
         this.setState({
           chartInfo: data,
           disclaim: data.disclaimer,
@@ -49,7 +49,9 @@ class App extends React.Component {
   render() {
     if (!this.state.object) {
       return (
-        <div>Hello</div>
+        <div>
+          <img src="https://thumbs.gfycat.com/FaithfulDeafeningBullmastiff-small.gif"/>
+        </div>
       );
     } else {
       return (
