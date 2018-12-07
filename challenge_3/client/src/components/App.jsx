@@ -5,22 +5,22 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      score: ''
+      score: 0,
     };
     this.pinClick = this.pinClick.bind(this);
   }
 
   pinClick (e) {
-    var pin = e.target.innerText;
-    console.log('pinclick state', pin);
+    var pin = parseInt(e.target.innerText);
     this.setState({
-      score: pin,
+      score: this.state.score + pin,
     }); 
   }
 
   render() {
+    console.log('the pin total', this.state.score);
     return (
-      <div>THE WORLD IS WAITING
+      <div>Bowling ScoreCard
         <Pins score={this.pinClick}></Pins>
       </div>
     );
