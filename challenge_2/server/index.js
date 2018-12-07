@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 app.get('/current', (req, res) => {
-  fetch('https://api.coindesk.com/v1/bpi/historical/close.json')
+  fetch('https://api.coindesk.com/v1/bpi/historical/close.json?start=2017-11-24&end=2017-12-01')
     .then(response => response.json())
     .then((data) => {
       res.send(data);
