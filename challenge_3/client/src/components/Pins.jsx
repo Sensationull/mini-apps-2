@@ -2,17 +2,17 @@ import React from 'react';
 
 const Pins = (props) => (
   <div className="pins" onClick={props.score}>
-    <i className="pin">1</i>
-    <i className="pin">2</i>
-    <i className="pin">3</i>
-    <i className="pin">4</i>
-    <i className="pin">5</i>
-    <i className="pin">6</i>
-    <i className="pin">7</i>
-    <i className="pin">8</i>
-    <i className="pin">9</i>
-    <i className="pin">10</i>
-    <i className="pin">0</i>
+    <div className="pin">1</div>
+    <div className="pin">2</div>
+    <div className="pin">3</div>
+    <div className="pin">4</div>
+    <div className="pin">5</div>
+    <div className="pin">6</div>
+    <div className="pin">7</div>
+    <div className="pin">8</div>
+    <div className="pin">9</div>
+    <div className="pin">10</div>
+    <div className="pin">0</div>
   </div>
 );
 
