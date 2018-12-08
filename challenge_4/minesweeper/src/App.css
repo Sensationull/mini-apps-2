@@ -1,0 +1,13 @@
+.lines {
+  background-color: grey;
+  height: 25px;
+  width: 25px;
+}
+
+.lines:hover {
+  background-color: aquamarine;
+}
+
+.lines:active {
+  background-color:royalblue;
+}
